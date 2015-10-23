@@ -1,0 +1,71 @@
+body {
+    background-color: #ffffff;
+}
+
+IMG.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.logging, h1.main-header, p.remember-me-checkbox, h1.not-found, form.register, table.students-table, h3.guide, div.pwr-info, div.departments{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1.main-header{
+    width: 800px;
+}
+
+form.register{
+    width: 500px;
+}
+
+table.students-table{
+    width: 1100px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+table.promo-table{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.students-table td, table.students-table tr, table.students-table th, table.promo-table, table.promo-table td, table.promo-table tr, table.promo-table th{
+    border: 1px solid black;
+}
+
+h1.main-header, h1.not-found {
+    font-size: 25pt;
+}
+
+p.remember-me-checkbox{
+    padding-left: 675px;
+}
+
+p.logging{
+    margin-top: 50px;
+}
+
+
+td{
+    text-align: center;
+}
+
+footer{
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+div.menu{
+    margin-left: 400px;
+}
+
+table.input-text-fields-table{
+    width: 300px;
+}

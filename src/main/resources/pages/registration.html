@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Rejestracja - System Obsługi Prac Dyplomowych PWr</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="registration, prace dyplomowe, studenci, promotorzy, uczelnia, politechnika, wroclaw, wroclawska">
+        <meta name="description" content="This page allows you to register in site.">
+        <link rel = "stylesheet" type = "text/css" href="css/styles.css" />
+
+    </head>
+    <body>
+    <a href="index.html"><img class="logo" src="images/logoBackground.png" alt="Politechnika Wrocławska"/></a>
+    <form class="register" method="post" action="404-not-found.html">
+        <table class="input-text-fields-table">
+            <tr>
+                <td>Nr Indeksu:</td><td><input name="id" type="text" size=25></td>
+            </tr>
+            <tr>
+                <td>Imię:</td><td><input name="name" type="text" size=25></td>
+            </tr>
+            <tr>
+                <td>Nazwisko:</td><td><input name="surname" type="text" size=25></td>
+            </tr>
+            <tr>
+                <td>Email:</td><td><input name="email" type="text" size=25></td>
+            </tr>
+            <tr>
+                <td>Hasło:</td><td><input name="password" type="password" size=25></td>
+            </tr>
+            <tr>
+                <td>Powtórz hasło:</td><td><input name="confirmPassword" type="password" size=25></td>
+            </tr>
+
+            <tr>
+                <td>Promotor:</td><td><input name="promotor" type="text" size=25></td>
+            </tr>
+            <tr>
+                <td>Temat</td>
+                <td>
+                    <textarea cols="36" rows="4" maxlength="200"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3">Praca dyplomowa</td>
+                <td><input type="radio" name="position" value="inz"> Praca Inzynierska</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="position" value="mgr"> Praca Magisterska</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="position" value="dr"> Praca Doktorancka</td>
+            </tr>
+            <tr>
+                <td>
+                    Liczba kierunków, na których studiujesz
+                </td>
+                <td>
+                    <select name="numberOfDifferentCourses">
+                        <option selected>--wybierz--</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </td>
+             </tr>
+
+        </table>
+        <table>
+
+
+            <tr>
+                <td><input type="checkbox" name="position" value="statement"> Oświadczam, że pobieram nauki na Politechnice Wrocławskiej...*</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="position" value="statue"> Akceptuje regulamin*</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="position" value="newsletter"> Chcę otrzymywać powiadomienia, gdy harmonogram ulegnie zmianie.</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" value="Rejestruj" name="registerBtn">
+                    <input type="reset" value="Wyczyść" name="resetBtn">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+    <footer>
+        &copy; SOPD PWr 2015
+    </footer>
+    </body>
+</html>
