@@ -2,19 +2,24 @@ body {
     background-color: #ffffff;
 }
 
-IMG.logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-p.logging, h1.main-header, p.remember-me-checkbox, h1.not-found, form.register, table.students-table, h3.guide, div.pwr-info, div.departments{
+p.logging,
+h1.main-header,
+p.remember-me-checkbox,
+h1.not-found,
+form.register,
+table.students-table,
+h3.guide,
+section.pwr-info,
+section.departments,
+nav#internal-href,
+section#contact-section,
+header{
     width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
-h1.main-header{
+header, h1.header-title{
     width: 800px;
 }
 
@@ -62,10 +67,18 @@ footer{
     text-align: center;
 }
 
-div.menu{
+nav#internal-href{
     margin-left: 400px;
 }
 
 table.input-text-fields-table{
     width: 300px;
 }
+
+/*nav{*/
+    /*width: 150px;*/
+    /*float: left;*/
+    /*display: inline;*/
+    /*margin: 0 0 0 300px;*/
+    /*padding: 0;*/
+/*}*/
