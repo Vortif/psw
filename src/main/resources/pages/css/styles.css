@@ -11,12 +11,21 @@ table.students-table,
 h3.guide,
 section.pwr-info,
 section.departments,
-nav#internal-href,
-section#contact-section,
-header{
-    width: 600px;
+section#contact,
+header
+{
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
+
+nav#goto{
+    float: left;
+}
+
+section#contact{
+    width: 200px;
+    padding-bottom: 50px;
 }
 
 header, h1.header-title{
@@ -47,14 +56,16 @@ h1.main-header, h1.not-found {
     font-size: 25pt;
 }
 
-p.remember-me-checkbox{
-    padding-left: 675px;
+section#main-section{
+    padding-top: 40px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 p.logging{
     margin-top: 50px;
 }
-
 
 td{
     text-align: center;
@@ -62,23 +73,41 @@ td{
 
 footer{
     position:fixed;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
     text-align: center;
 }
 
-nav#internal-href{
-    margin-left: 400px;
-}
-
-table.input-text-fields-table{
-    width: 300px;
-}
-
-/*nav{*/
-    /*width: 150px;*/
-    /*float: left;*/
-    /*display: inline;*/
-    /*margin: 0 0 0 300px;*/
-    /*padding: 0;*/
+/*table.registration-table{*/
+    /*width: 400px;*/
 /*}*/
+
+table.registration-table td, table.application-table td{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+table.application-table{
+    width: 800px;
+}
+
+col.first-column{
+    width: 150px;
+}
+
+col.first-column-app{
+    width: 200px;
+}
+
+col.second-column{
+    width: 450px;
+}
+
+col.second-column-app{
+    width: 600px
+}
+
+table td.submit-reset-buttons{
+    padding-top: 30px;
+}

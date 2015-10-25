@@ -22,14 +22,19 @@ and open the template in the editor.
         <a href="index.html">Stronga Główna</a> <a href="logging.html">Logowanie</a> <a href="registration.html">Rejestracja</a> <a href="students-list.html">Lista Studentów</a> <a href="http://www.portal.pwr.wroc.pl/files/prv/id24/nauczanie/regulamin_studiow_2015.pdf" download>Regulamin</a> <a href="ftp://ftp.ps.pl/pub/Linux/debian-cd/" download>Download</a>
     </nav>
 </header>
-<form method="post" action="404-not-found.html">
-    <p class="logging">
-        <label>Login*: </label><input name="login" type="text" size=25>
-        <label>Hasło*: </label><input name="password" type="password" size=25>
-        <input type="submit" name="loginButton" value="zaloguj">
-    </p>
-    <p class="remember-me-checkbox"> <label>Zapamiętaj mnie</label><input value="rememberMeCheckbox" type="checkbox"></p>
-</form>
+<section id="logging">
+    <header>
+        <h2>LOGOWANIE</h2>
+    </header>
+    <form method="post" action="404-not-found.html">
+        <p class="logging">
+            <label>Login*: </label><input name="login" type="text" size=25>
+            <label>Hasło*: </label><input name="password" type="password" size=25>
+            <input type="submit" name="loginButton" value="zaloguj">
+        </p>
+        <p class="remember-me-checkbox"> <label>Zapamiętaj mnie</label><input value="rememberMeCheckbox" type="checkbox"></p>
+    </form>
+</section>
 <footer>
     &copy; SOPD PWr 2015
 </footer>

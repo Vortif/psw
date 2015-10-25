@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>Zgłaszanie tematu pracy dyplomowej - System Obsługi Prac Dyplomowych PWr</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="application, thesis, prace dyplomowe, studenci, promotorzy, uczelnia, politechnika, wroclaw, wroclawska">
+    <meta name="description" content="This page allows you to apply your thesis in system.">
+    <link rel = "stylesheet" type = "text/css" href="css/styles.css" />
+</head>
+<body>
+<header>
+    <a href="index.html"><img src="images/logoBackground.png" alt="Politechnika Wrocławska"/></a>
+
+    <h1 class="header-title">SYSTEM OBSŁUGI PRAC DYPLOMOWYCH</h1>
+    <nav>
+        <a href="index.html">Stronga Główna</a> <a href="logging.html">Logowanie</a> <a href="registration.html">Rejestracja</a> <a href="students-list.html">Lista Studentów</a> <a href="http://www.portal.pwr.wroc.pl/files/prv/id24/nauczanie/regulamin_studiow_2015.pdf" download>Regulamin</a> <a href="ftp://ftp.ps.pl/pub/Linux/debian-cd/" download>Download</a>
+    </nav>
+</header>
+<section id="application">
+    <header>
+        <h2>ZGŁOSZENIE PRACY DYPLOMOWEJ</h2>
+    </header>
+    <form class="register" method="post" action="404-not-found.html" autocomplete="on">
+        <table class="application-table">
+            <col class="first-column-app"/>
+            <col class="second-column-app"/>
+            <tr>
+                <td>Promotor:</td>
+                <td>
+                    <select name="promotor" required>
+                        <option selected value="">--wybierz--</option>
+                        <option>Promotor 1</option>
+                        <option>Promotor 2</option>
+                        <option>Promotor 3</option>
+                        <option>Promotor 4</option>
+                        <option>Promotor 5</option>
+                        <option>Promotor 6</option>
+                        <option>Promotor 7</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Temat</td>
+                <td>
+                    <textarea cols="36" rows="4" maxlength="200" placeholder="Temat pracy dyplomowej" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3">Praca dyplomowa</td>
+                <td><input type="radio" name="position" value="inz" required> Praca Inzynierska</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="position" value="mgr"> Praca Magisterska</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="position" value="dr"> Praca Doktorancka</td>
+            </tr>
+            <tr>
+                <td>
+                    Liczba kierunków, na których studiujesz (max 5)
+                </td>
+                <td>
+                    <!--1<input type="range" min="1" max="5" value="1"/>5-->
+                    <input type="number" min="1" max="5" step="1" value="1" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>Kolor oprawy pracy dyplomowej</td>
+                <td>
+                    <input type="color"> (Kod szesnastkowy)
+                </td>
+            </tr>
+            <tr>
+                <td>Rozpoczęcie studiów (rok i miesiąc):</td>
+                <td>
+                    <input type="month"> (rrrr-mm) <!--  pattern="[1-2]\d{3}-([0][1-9]|[1][0-2]) -->
+                </td>
+            </tr>
+            <tr>
+                <td>Szukaj:</td>
+                <td>
+                    <input type="search" name="searchField" placeholder="Wyszukaj...">
+                </td>
+            </tr>
+            <tr>
+                <td>Twoja strona www (opcjonalnie)</td>
+                <td>
+                    <input type="url" placeholder="Twoja strona www"> (http://www.twojastrona.domena)
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="submit-reset-buttons">
+                    <input type="submit" value="Rejestruj" name="registerBtn">
+                    <input type="reset" value="Wyczyść" name="resetBtn">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</section>
+<footer>
+    &copy; SOPD PWr 2015
+</footer>
+</body>
+</html>
