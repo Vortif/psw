@@ -12,8 +12,7 @@ h3.guide,
 section.pwr-info,
 section.departments,
 section#contact,
-header
-{
+header{
     width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -48,6 +47,11 @@ table.promo-table{
     margin-right: auto;
 }
 
+aside#statistics{
+    float: right;
+    width: 200px;
+}
+
 table.students-table td, table.students-table tr, table.students-table th, table.promo-table, table.promo-table td, table.promo-table tr, table.promo-table th{
     border: 1px solid black;
 }
@@ -56,11 +60,15 @@ h1.main-header, h1.not-found {
     font-size: 25pt;
 }
 
-section#main-section{
+section#main-section, section#main-section-students-list{
     padding-top: 40px;
-    width: 1000px;
+    width: 1300px;
     margin-left: auto;
     margin-right: auto;
+}
+
+section#main-section-students-list {
+    width: 1500px;
 }
 
 p.logging{
@@ -83,8 +91,7 @@ footer{
 /*}*/
 
 table.registration-table td, table.application-table td{
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 4px 5px 4px;
     text-align: left;
 }
 
